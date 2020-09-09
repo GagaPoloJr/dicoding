@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gaga Trailers</title><style>html,
+        body {
+            transition: all 500ms ease-in;
+            scroll-behavior: smooth;
+        }</style></head><body><div id="overlay"><div class="spinner"></div></div><div id="overlay-detail" style="display: none;"><div class="spinner"></div></div><header><nav-bar></nav-bar></header><jumbotron-page></jumbotron-page><main><search-bar></search-bar><br><p id="hasil" style="display: none;  font-style: italic; color:gray;"></p></main><div id="container-list" class="container"><div class="row justify-content-center"><h2 id="upcoming">Upcoming Movies</h2><h2 style="display: none;" id="searched">Searched Movies</h2><movie-list></movie-list></div></div><section id="detail-movie" class="detail-movie" style="display: none;"><div class="container"><img src="" id="detailImage" class="img-fluid img-shadow"><detail-movie></detail-movie></div></section><footer-footer></footer-footer><script>var overlay = document.getElementById("overlay");
+
+        window.addEventListener('load', () => {
+            overlay.classList.add('overlay-finish');
+        })</script><script src="bundle.js"></script></body></html>

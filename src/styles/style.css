@@ -1,0 +1,196 @@
+/* template untuk tulisan */
+
+html,
+body {
+    font-size: 14px !important;
+}
+
+h1 {
+    font-size: 1.602em;
+}
+
+h2 {
+    font-size: 1.424em;
+}
+
+h3 {
+    font-size: 1.266em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5 {
+    font-size: 0.889em;
+}
+
+h6 {
+    font-size: 0.79em;
+}
+
+.display-1 {
+    font-size: 3.906em;
+}
+
+.display-2 {
+    font-size: 3.125em;
+}
+
+.display-3 {
+    font-size: 2.5em;
+}
+
+.display-4 {
+    font-size: 2em;
+}
+
+
+/* // Medium devices (tablets, 48em and up)  */
+
+@media (min-width: 48em) {
+    h1 {
+        font-size: 2.441em;
+    }
+    h2 {
+        font-size: 1.953em;
+    }
+    h3 {
+        font-size: 1.563em;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+    .display-1 {
+        font-size: 6em;
+    }
+    .display-2 {
+        font-size: 5.5em;
+    }
+    .display-3 {
+        font-size: 4.5em;
+    }
+    .display-4 {
+        font-size: 3.5em;
+    }
+}
+
+
+/* // Large devices (desktops, 62em and up) */
+
+@media (min-width: 62em) {
+    html,
+    body {
+        font-size: 16px !important;
+    }
+}
+
+
+/* // Extra large devices (large desktops, 75em and up) */
+
+@media (min-width: 75em) {
+    html,
+    body {
+        font-size: 18px !important;
+    }
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 32px auto;
+}
+
+
+/* loading animation */
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(41, 41, 41, 0.452);
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+#overlay-detail {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(41, 41, 41, 0.452);
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.overlay-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #3f3f3f;
+    border-top: 5px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#upcoming {
+    font-family: 'Montserrat', sans-serif;
+}
+
+movie-list {
+    display: block;
+    margin-top: 32px;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+movie-item {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+#show_videos {
+    cursor: pointer;
+}
+
+.content {
+    border: #f25a41;
+    display: none;
+}
+
+.content div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-footer {
+    background-color: rgb(41, 44, 44);
+    color: white;
+}
